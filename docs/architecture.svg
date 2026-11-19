@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b1020"/><stop offset="1" stop-color="#151329"/></linearGradient>
+ <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#36cfc9"/><stop offset="1" stop-color="#58a6ff"/></linearGradient>
+ <style>
+ .h{font:700 30px 'Segoe UI',Arial;fill:#f0f6fc}.sub{font:16px 'Segoe UI',Arial;fill:#9da7b3}
+ .box{fill:#151d2e;stroke:#3b526b;stroke-width:2;rx:16}
+ .t{font:700 19px 'Segoe UI',Arial;fill:#e6edf3}.d{font:15px 'Segoe UI',Arial;fill:#aebdca}
+ .line{stroke:#57c8c4;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}
+ .pill{fill:#123b42;stroke:#36cfc9;stroke-width:1.5}
+ </style>
+ <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0 L9 3 L0 6" fill="none" stroke="#57c8c4" stroke-width="1.5"/></marker>
+</defs>
+<rect width="1200" height="760" fill="url(#bg)" rx="24"/>
+<text x="600" y="58" text-anchor="middle" class="h">MrDump — High-Level Architecture</text>
+<text x="600" y="88" text-anchor="middle" class="sub">Defensive, read-only file triage and optional intelligence lookups</text>
+<rect x="390" y="120" width="420" height="84" class="box"/>
+<text x="600" y="155" text-anchor="middle" class="t">Textual Terminal UI</text>
+<text x="600" y="181" text-anchor="middle" class="d">Tabs · user actions · readable results</text>
+<path d="M600 204 V248" class="line" marker-end="url(#arrow)"/>
+<rect x="390" y="258" width="420" height="92" class="box"/>
+<text x="600" y="294" text-anchor="middle" class="t">Analysis Orchestrator</text>
+<text x="600" y="321" text-anchor="middle" class="d">Input validation · safe dispatch · report model</text>
+<path d="M600 350 V390 H190 V430 M600 390 V430 M600 390 H1010 V430" class="line" marker-end="url(#arrow)"/>
+<rect x="45" y="440" width="290" height="150" class="box"/>
+<text x="190" y="477" text-anchor="middle" class="t">Static File Analysis</text>
+<text x="190" y="510" text-anchor="middle" class="d">SHA-256 · entropy · strings</text>
+<text x="190" y="536" text-anchor="middle" class="d">Malware heuristics · PE · ZIP</text>
+<text x="190" y="562" text-anchor="middle" class="d">MP4 identification · sampling</text>
+<rect x="455" y="440" width="290" height="150" class="box"/>
+<text x="600" y="477" text-anchor="middle" class="t">Local Scanner</text>
+<text x="600" y="510" text-anchor="middle" class="d">Optional ClamAV / clamscan</text>
+<text x="600" y="536" text-anchor="middle" class="d">Local signatures</text>
+<text x="600" y="562" text-anchor="middle" class="d">No target execution by MrDump</text>
+<rect x="865" y="440" width="290" height="150" class="box"/>
+<text x="1010" y="477" text-anchor="middle" class="t">External Lookups</text>
+<text x="1010" y="510" text-anchor="middle" class="d">VirusTotal · SHA-256 only</text>
+<text x="1010" y="536" text-anchor="middle" class="d">OSV · package/version query</text>
+<text x="1010" y="562" text-anchor="middle" class="d">Private IPv4 TCP checks</text>
+<path d="M190 590 V630 H600 M600 590 V630 M1010 590 V630 H600 V650" class="line" marker-end="url(#arrow)"/>
+<rect x="390" y="655" width="420" height="72" class="pill" rx="14"/>
+<text x="600" y="684" text-anchor="middle" class="t">Text Report (.txt) + UI Findings</text>
+<text x="600" y="708" text-anchor="middle" class="d">No JSON export · no automatic remediation</text>
+</svg>
