@@ -66,7 +66,7 @@ and optionally consulting local or external security engines.
 5. Enter the full path to the file you want to inspect. Quoted paths are accepted.
 
 ```bat
-git clone <YOUR-REPOSITORY-URL>
+git clone https://github.com/larperforce/MrDump.git
 cd MrDump
 install.bat
 run.bat
